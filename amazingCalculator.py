@@ -18,6 +18,6 @@ class Calculator:
         return None
 
     def multiply(self, a, b):
-        result = a ** b
+        result = a * b
         self.history.append(result)
         return result
