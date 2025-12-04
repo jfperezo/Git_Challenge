@@ -21,3 +21,8 @@ class Calculator:
         if self.history:
             return self.history[-1]
         return None
+
+    def multiply(self, a, b):
+        result = a * b
+        self.history.append(result)
+        return result
