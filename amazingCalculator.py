@@ -17,6 +17,11 @@ class Calculator:
             raise ValueError("Cannot divide by zero.")
         return a / b
 
+    def power(self, a, b):
+        result = a ** b
+        self.history.append(result)
+        return result
+
     def previous_result(self):
         if self.history:
             return self.history[-1]
